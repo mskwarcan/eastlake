@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      promotions:
+        title: Promotions
+    promotions:
+      admin:
+        promotions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Promotion
+            reorder: Réordonner les Promotions
+            reorder_done: Fin de réordonnancement des Promotions
+          records:
+            title: Promotions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Promotion. Cliquer sur "Créer un(e) nouve(au/l/lle) Promotion" pour créer votre premi(er/ère) promotion.'
+          promotion:
+            view_live_html: Voir ce(t/tte) promotion <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) promotion
+            delete: Supprimer définitivement ce(t/tte) promotion
+      promotions:
+        show:
+          other: Autres Promotions
+  activerecord:
+    attributes:
+      'refinery/promotions/promotion':
+        title: Title
+        promotion: Promotion
+        active: Active

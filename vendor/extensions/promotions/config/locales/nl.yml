@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      promotions:
+        title: Promotions
+    promotions:
+      admin:
+        promotions:
+          actions:
+            create_new: Maak een nieuwe Promotion
+            reorder: Wijzig de volgorde van de Promotions
+            reorder_done: Klaar met het wijzingen van de volgorde van de Promotions
+          records:
+            title: Promotions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Promotions. Druk op 'Maak een nieuwe Promotion' om de eerste aan te maken.
+          promotion:
+            view_live_html: Bekijk deze promotion op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze promotion
+            delete: Verwijder deze promotion voor eeuwig
+      promotions:
+        show:
+          other: Andere Promotions
+  activerecord:
+    attributes:
+      'refinery/promotions/promotion':
+        title: Title
+        promotion: Promotion
+        active: Active

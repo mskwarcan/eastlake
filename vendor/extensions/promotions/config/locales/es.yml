@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      promotions:
+        title: Promotions
+#        article: masculino/femenino
+    promotions:
+      admin:
+        promotions:
+          actions:
+            create_new: Crear nuevo promotion
+            reorder: Reordenar promotions
+            reorder_done: Reordenación de promotions completada
+          records:
+            title: Promotions
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay promotions todavía. Pulsa en "Crear nuevo Promotion" para crear tu primer promotion.
+          promotion:
+            view_live_html: Ver este promotion como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este promotion
+            delete: Borrar este promotion para siempre
+      promotions:
+        show:
+          other: Otros promotions
+  activerecord:
+    attributes:
+      'refinery/promotions/promotion':
+        title: Title
+        promotion: Promotion
+        active: Active

@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @promotion.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @promotion.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Promotion</h1>
+    <p>
+      <%= image_fu @promotion.promotion, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Active</h1>
+    <p>
+      <%=raw @promotion.active %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="promotions">
+      <% @promotions.each do |promotion| %>
+        <li>
+          <%= link_to promotion.title, refinery.promotions_promotion_path(promotion) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

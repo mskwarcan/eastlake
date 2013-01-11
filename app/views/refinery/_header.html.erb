@@ -1,0 +1,14 @@
+<div class="login">
+  <h3>Membership Login</h3>
+  <div class="links">
+    <a href="https://elac.clubautomation.com/" target="_blank">Elkhart</a><br />
+    <a href="https://mcac.clubautomation.com/"  target="_blank">Goshen</a>
+  </div>
+</div>
+
+<%= link_to image_tag('logo.png'), refinery.root_path, :class => 'logo' %>
+
+<%= render(:partial => "/refinery/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>

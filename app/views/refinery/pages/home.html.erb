@@ -1,0 +1,116 @@
+<style>
+  body
+  {
+    background:url(/assets/home_bg.png) #000 top center repeat-x;
+  }
+</style>
+<ul class="promos">
+<% @promos.each do |promo|%>
+  <li><img src="<%= promo.promotion.url %>" /></li>
+<% end %>
+</ul>
+
+<div class="pager"></div>
+
+<div class="home_info">
+  <div class="left">
+  <h3>LOCATIONS</h3>
+    <div class="location">
+      <h4>Eastlake Athletic Club<br /> Elkhart</h4>
+      3400 Henke Rd.<br />
+      Elkhart, IN 46514<br />
+      (574) 264 - 0611
+    </div>
+  
+    <div class="location">
+    <h4>Eastlake Athletic Club<br /> Goshen</h4>
+    1400 Fairfield Ave.<br />
+    Goshen, IN 46526<br />
+    (574) 533 - 2498
+    </div>
+  
+    <div class="location">
+      <h4>Eastlake 24</h4>
+      5150 Verdant Dr.<br />
+      Elkhart, IN 46517<br />
+      (574) 293 - 6899
+    </div>
+  </div>
+  
+  <div class="left">
+  <h3>HOURS</h3>
+    <table class="hours">
+      <tr>
+        <td><b>Monday &ndash; Thursday</b></td><td>5 am &ndash; 9 pm</td>
+      </tr>
+      <tr>
+        <td><b>Friday</b></td><td>5 am &ndash; 8 pm</td>
+      </tr>
+      <tr>
+        <td><b>Saturday</b></td><td>7 am &ndash; 3 pm</td>
+      </tr>
+      <tr>
+        <td><b>Sunday</b></td><td>12 pm &ndash; 4 pm</td>
+      </tr>
+    </table>
+  </div>
+  
+  <h3>Eastlake 24 staffed HOURS</h3>
+  <b>Monday &ndash; Thursday</b><br />	
+  12 pm &ndash; 6 pm
+
+<div class="category sports">
+  <h2>Sports</h2>
+  <ul>
+    <li><a href="#"><img src="/assets/tennis.jpg" /><br />
+      Tennis</a>
+    </li>
+    <li><a href="#"><img src="/assets/basketball.jpg" /><br />
+      basketball</a>
+    </li>
+    <li><a href="#"><img src="/assets/soccer.jpg" /><br />
+      Soccer</a>
+    </li>
+    <li><a href="#"><img src="/assets/racquetball.jpg" /><br />
+      racquetball</a>
+    </li>
+    <li><a href="#"><img src="/assets/football.jpg" /><br />
+      football</a>
+    </li>
+    <li><a href="#"><img src="/assets/baseball.jpg" /><br />
+      baseball</a>
+    </li>
+  </ul>
+</div>
+
+<div class="category class">
+  <h2>Classes</h2>
+  <ul>
+    <li><a href="#"><img src="/assets/fitness.jpg" /><br />
+      fitness</a>
+    </li>
+    <li><a href="#"><img src="/assets/speed.jpg" /><br />
+      speed &amp; agility</a>
+    </li>
+    <li><a href="#"><img src="/assets/bjj.jpg" /><br />
+      Brazilian Jiu Jitsu</a>
+    </li>
+  </ul>
+</div>
+
+<div class="category">
+  <h2>Facilities</h2>
+  <ul>
+    <li><a href="#"><img src="/assets/fields.jpg" /><br />
+      Multi-sports Field</a>
+    </li>
+    <li><a href="#"><img src="/assets/proshop.jpg" /><br />
+      Pro Shop</a>
+    </li>
+    <li><a href="#"><img src="/assets/childcare.jpg" /><br />
+      Childcare</a>
+    </li>
+  </ul>
+</div>
+
+</div>

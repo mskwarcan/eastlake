@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      promotions:
+        title: Promotions
+    promotions:
+      admin:
+        promotions:
+          actions:
+            create_new: 建立新的 Promotion
+            reorder: 对 Promotions 重新排序
+            reorder_done: 对 Promotions 的重新排序结束
+          records:
+            title: Promotions
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Promotions yet. Click "Add New Promotion" to add your first promotion.
+            no_items_yet: 目前没有 Promotions . 点击 "Add New Promotion" 创建一个promotion.
+          promotion:
+            view_live_html: 查看 promotion 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 promotion
+            delete: 永久删除 promotion
+      promotions:
+        show:
+          other: 其他 Promotions
+  activerecord:
+    attributes:
+      'refinery/promotions/promotion':
+        title: Title
+        promotion: Promotion
+        active: Active

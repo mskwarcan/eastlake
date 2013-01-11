@@ -1,0 +1,339 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body
+{
+  line-height:1.2;
+  font-size:20px;
+  margin:0;
+  padding:0;
+  font-family: "futura-pt-condensed-1","futura-pt-condensed-2",sans-serif;
+  color:#fff;
+  background:url(/assets/bg.png) #000 bottom center repeat-x;
+}
+
+h2
+{
+  font-size:36px;
+}
+
+#page_container
+{
+  width:960px;
+  margin:0 auto;
+}
+
+#page
+{
+  clear:both;
+}
+
+.left
+{
+  float:left;
+  margin-right:15px;
+}
+
+/* Header */
+.logo
+{
+  position:relative;
+  z-index:20;
+  float: left;
+  margin-right:15px;
+}
+
+#header
+{
+  height:100px;
+  position:relative;
+}
+
+#header #menu ul
+{
+  position:relative;
+  z-index:14;
+  margin:0;
+  padding:33px 0 0 0;;
+}
+
+#header #menu li
+{
+  position:relative;
+  list-style:none;
+  border-left: 4px solid #fffc01;
+  float:left;
+  text-transform:uppercase;
+  font-size: 24px;
+}
+
+#header #menu li:first-child
+{
+  border-left:none;
+}
+
+#header #menu li a
+{
+  display:inline-block;
+  padding:0 8px;
+  color:#fff;
+  text-decoration:none;
+}
+
+#header #menu li.selected a
+{
+  color:#fffc01;
+}
+
+#header #menu li.active a
+{
+  background:#fffc01;
+  color:#000;
+}
+
+#header #menu ul ul
+{
+  padding:3px 0;
+  position:absolute;
+  background:#fffc01;
+  display:none;
+  clear:left;
+  top:29px;
+  left:-4px;
+}
+
+#header #menu ul ul li
+{
+  border:none;
+  float:none;
+}
+
+#header #menu ul ul li a
+{
+  color:#000;
+}
+
+#header #menu ul ul li a:hover
+{
+  text-decoration:underline;
+}
+
+.login
+{
+  position:absolute;
+  padding:2px 10px;
+  text-align:center;
+  color:#000;
+  background:#fffc01;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right:0;
+}
+
+.login h3
+{
+  margin:0;
+}
+
+.login a
+{
+  color:#000;
+  font-size:18px;
+  text-decoration:none;
+}
+
+.login .links
+{
+  clear:lef;
+   display:none;
+}
+
+.login:hover .links
+{
+  display:inline-block;
+}
+
+.login a:hover
+{
+    text-decoration:underline;
+}
+
+/* Home page */
+.promos
+{
+  height:294px;
+  top:-15px;
+  margin:0;
+  padding:0;
+}
+
+.promos li
+{
+  list-style:none;
+}
+
+.pager
+{
+  text-align:center;
+}
+
+.pager a
+{
+  display:inline-block;
+  height:10px;
+  width:10px;
+  margin:0 2px;
+  text-indent:-9999px;
+  background:url('/assets/pager.png');
+}
+
+.pager a.activeSlide
+{
+  background:url('/assets/active_pager.png');
+}
+
+.home_info
+{
+  margin:25px 0;
+}
+
+.home_info h3
+{
+  color:#fffc01;
+  text-transform:uppercase;
+  margin:0;
+  font-size:24px;
+}
+
+.home_info .location
+{
+  float:left;
+  margin-right:20px;
+  color:#ababab;
+}
+
+.home_info .location h4
+{
+  color:#fff;
+  margin:0;
+}
+
+.home_info .hours
+{
+  width:250px;
+  color:#ababab;
+}
+
+.home_info .hours b
+{
+  color:#fff;
+}
+
+.home_info .category.sports
+{
+  clear:left;
+  margin:20px 0;
+}
+
+.home_info .category
+{
+  float:left;
+  margin:0;
+  text-transform:uppercase;
+}
+
+.home_info .category.class
+{
+  margin:0 20px 0 0;
+}
+
+.home_info .category h2
+{
+  color:#fff;
+  margin:0 0 15px 0;
+  border-bottom: 3px solid #fffc01;
+}
+
+.home_info .category ul
+{
+  margin:0;
+  padding:0;
+}
+
+.home_info .category ul li
+{
+  font-size:24px;
+  list-style:none;
+  float:left;
+  margin-left:20px;
+}
+
+.home_info .category ul li:first-child
+{
+  margin:0;
+}
+
+.home_info .category ul li a
+{
+  color:#fffc01;
+  text-decoration:none;
+}
+
+/* Main body Styles */
+#body_content
+{
+  margin:20px 0;
+}
+
+#body_content h3
+{
+  font-size:24px;
+  color:#fffc01;
+}
+
+#body_content a
+{
+  color:#fffc01;
+}
+
+#body_content_title
+{
+  font-size:36px;
+  color:#fff;
+  margin:0 0 15px 0;
+  border-bottom: 3px solid #fffc01;
+}
+
+#body_content #body
+{
+  float:left;
+  width:700px;
+  margin-right:20px;
+}
+
+#body_content #side_body
+{
+  float:left;
+  width:240px;
+}
+
+/* footer */
+footer
+{
+  clear:both;
+}

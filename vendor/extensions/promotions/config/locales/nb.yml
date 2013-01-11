@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      promotions:
+        title: Promotions
+    promotions:
+      admin:
+        promotions:
+          actions:
+            create_new: Lag en ny Promotion
+            reorder: Endre rekkefølgen på Promotions
+            reorder_done: Ferdig å endre rekkefølgen Promotions
+          records:
+            title: Promotions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Promotions enda. Klikk på "Lag en ny Promotion" for å legge til din første promotion.
+          promotion:
+            view_live_html: Vis hvordan denne promotion ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne promotion
+            delete: Fjern denne promotion permanent
+      promotions:
+        show:
+          other: Andre Promotions
+  activerecord:
+    attributes:
+      'refinery/promotions/promotion':
+        title: Title
+        promotion: Promotion
+        active: Active
