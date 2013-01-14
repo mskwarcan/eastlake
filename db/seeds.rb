@@ -14,3 +14,6 @@ Refinery::Promotions::Engine.load_seed
 
 # Added by Refinery CMS Inquiries engine
 Refinery::Inquiries::Engine.load_seed
+
+# Added by Refinery CMS Staffs extension
+Refinery::Staffs::Engine.load_seed

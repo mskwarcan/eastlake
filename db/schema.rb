@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130111212838) do
+ActiveRecord::Schema.define(:version => 20130114205215) do
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -142,6 +142,16 @@ ActiveRecord::Schema.define(:version => 20130111212838) do
   end
 
   add_index "refinery_settings", ["name"], :name => "index_refinery_settings_on_name"
+
+  create_table "refinery_staffs", :force => true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.integer  "image_id"
+    t.text     "bio"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "refinery_user_plugins", :force => true do |t|
     t.integer "user_id"

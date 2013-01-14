@@ -3,6 +3,8 @@ PATH
   specs:
     refinerycms-promotions (1.0)
       refinerycms-core (~> 2.0.9)
+    refinerycms-staffs (1.0)
+      refinerycms-core (~> 2.0.9)
 
 GEM
   remote: https://rubygems.org/
@@ -217,6 +219,7 @@ DEPENDENCIES
   refinerycms-i18n (~> 2.0.0)
   refinerycms-inquiries (~> 2.0.0)
   refinerycms-promotions!
+  refinerycms-staffs!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

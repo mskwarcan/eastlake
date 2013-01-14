@@ -1,4 +1,44 @@
-<p>
-  <%= t('.copyright', :year => Time.now.year,
-                      :site_name => Refinery::Core.site_name) %>
-</p>
+<%= render(:partial => "/refinery/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>
+           
+<div class="locations">
+<p>Eastlake Athletic Club Elkhart<br />
+3400 Henke Rd., Elkhart, IN 46514
+
+<p>Eastlake Athletic Club Goshen<br />
+1400 Fairfield Ave., Goshen, IN 46526
+
+
+<p>Eastlake 24<br />
+5150 Verdant Dr., Elkhart, IN 46517
+</div>
+
+<div class="locations">
+  <table>
+  <tbody><tr>
+  <td>Monday</td> 
+  <td>5 AM - 9 PM</td>
+  </tr>
+  <tr>
+  <td>Tuesday</td> <td>5 AM - 9 PM</td>
+  </tr>
+  <tr>
+  <td>Wednesday</td> <td>5 AM - 9 PM</td>
+  </tr>
+  <tr>
+  <td>Thursday</td> <td>5 AM - 9 PM</td>
+  </tr>
+  <tr>
+  <td>Friday</td> <td>5 AM - 8 PM</td>
+  </tr>
+  <tr>
+  <td>Saturday</td> <td>7 AM - 3 PM</td>
+  </tr>
+  <tr>
+  <td>Sunday</td> <td>12 PM - 4 PM</td>
+  </tr>
+  </tbody>
+  </table>
+</div>
