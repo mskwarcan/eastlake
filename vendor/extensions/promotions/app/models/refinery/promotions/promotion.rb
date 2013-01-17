@@ -3,7 +3,7 @@ module Refinery
     class Promotion < Refinery::Core::BaseModel
       self.table_name = 'refinery_promotions'
 
-      attr_accessible :title, :promotion_id, :active, :position
+      attr_accessible :title, :promotion_id, :active, :position, :url
 
       acts_as_indexed :fields => [:title]
 

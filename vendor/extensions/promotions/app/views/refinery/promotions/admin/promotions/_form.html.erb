@@ -21,6 +21,12 @@
   </div>
   
   <div class='field'>
+    <%= f.label :url, "Promo Link" -%>
+    <%= f.text_field :url, :class => 'widest'  -%>
+
+  </div>
+  
+  <div class='field'>
     <%= f.label :active -%>
     <%= f.check_box :active, :checked => @promotion[:active]  -%>
 

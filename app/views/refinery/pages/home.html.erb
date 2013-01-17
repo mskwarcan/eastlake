@@ -11,7 +11,12 @@
 </style>
 <ul class="promos">
 <% @promos.each do |promo|%>
-  <li><img src="<%= promo.promotion.url %>" /></li>
+  <li><% if promo.url.present? %>
+    <a href="<%= promo.url %>"><img src="<%= promo.promotion.url %>" /></a>
+    <% else %>
+      <img src="<%= promo.promotion.url %>" />
+    <% end %>
+  </li>
 <% end %>
 </ul>
 

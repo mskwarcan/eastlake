@@ -21,6 +21,18 @@
         <td><%= f.text_field :phone, :class => 'text phone', :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %></td>
       </tr>
       <tr>
+        <td><%= f.label :category, "Area of Interest", :class => 'placeholder-fallback' %></td>
+        <td><select name="inquiry[category]">
+          <option value="General">General</option>
+          <option value="Tennis">Tennis</option>
+          <option value="Soccer">Soccer</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Football">Football</option>
+          <option value="Baseball">Baseball</option>
+          <option value="Classes">Classes</option>
+          </select></td>
+      </tr>
+      <tr>
         <td><%= f.required_label :message, :class => 'placeholder-fallback' %></td>
         <td><%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %></td>
       </tr>
