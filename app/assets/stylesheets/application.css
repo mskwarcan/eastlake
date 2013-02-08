@@ -178,7 +178,7 @@ h2
 .promos
 {
   height:294px;
-  top:-15px;
+  top:-20px;
   margin:0;
   padding:0;
 }
@@ -190,6 +190,8 @@ h2
 
 .pager
 {
+  position:relative;
+  top:-5px;
   text-align:center;
 }
 
