@@ -174,6 +174,19 @@ h2
     text-decoration:underline;
 }
 
+.social_icons
+{
+  float:right;
+  clear:right;
+}
+
+.social_icons a
+{
+  margin-left:10px;
+  float:right;
+  margin-top:38px;
+}
+
 /* Home page */
 .promos
 {
