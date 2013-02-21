@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "1.9.3"
 gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
@@ -23,6 +23,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'psych'
 gem 'jquery-rails', '~> 2.0.0'
 gem 'pg'
 gem 'fog'
