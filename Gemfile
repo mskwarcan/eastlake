@@ -28,6 +28,7 @@ gem 'pg'
 gem 'fog'
 gem 'newrelic_rpm'
 gem 'refinerycms-inquiries', '~> 2.0.0'
+gem "refinerycms-settings", :git => "git://github.com/refinery/refinerycms-settings.git", :branch => "2-0-stable"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
