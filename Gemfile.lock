@@ -56,7 +56,7 @@ GEM
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
       warden (~> 1.1.1)
-    dragonfly (0.9.14)
+    dragonfly (0.9.12)
       multi_json (~> 1.0)
       rack
     erubis (2.7.0)
@@ -125,7 +125,7 @@ GEM
       activerecord (= 3.2.9)
       activeresource (= 3.2.9)
       activesupport (= 3.2.9)
-      bundler (~> 1.0)
+      bundler (~> 1.2)
       railties (= 3.2.9)
     railties (3.2.9)
       actionpack (= 3.2.9)
@@ -138,7 +138,7 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     refinerycms (2.0.9)
-      bundler (~> 1.0)
+      bundler (~> 1.2)
       refinerycms-authentication (= 2.0.9)
       refinerycms-core (= 2.0.9)
       refinerycms-dashboard (= 2.0.9)
@@ -220,6 +220,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.2)
   coffee-rails (~> 3.2.1)
   fog
   jquery-rails (~> 2.0.0)

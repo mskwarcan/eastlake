@@ -29,6 +29,7 @@ gem 'pg'
 gem 'fog'
 gem 'newrelic_rpm'
 gem 'refinerycms-inquiries', '~> 2.0.0'
+gem 'bundler', '~> 1.2'
 
 
 # To use ActiveModel has_secure_password
