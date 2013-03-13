@@ -23,51 +23,7 @@
 <div class="pager"></div>
 
 <div class="home_info">
-  <div class="left">
-  <h3>LOCATIONS</h3>
-    <div class="location">
-      <h4>Eastlake Athletic Club<br /> Elkhart</h4>
-      3400 Henke Rd.<br />
-      Elkhart, IN 46514<br />
-      (574) 264 - 0611
-    </div>
-  
-    <div class="location">
-    <h4>Eastlake Athletic Club<br /> Goshen</h4>
-    1400 Fairfield Ave.<br />
-    Goshen, IN 46526<br />
-    (574) 533 - 2498
-    </div>
-  
-    <div class="location">
-      <h4>Eastlake 24</h4>
-      5150 Verdant Dr.<br />
-      Elkhart, IN 46517<br />
-      (574) 293 - 6899
-    </div>
-  </div>
-  
-  <div class="left">
-  <h3>HOURS</h3>
-    <table class="hours">
-      <tr>
-        <td><b>Monday &ndash; Thursday</b></td><td>5 am &ndash; 9 pm</td>
-      </tr>
-      <tr>
-        <td><b>Friday</b></td><td>5 am &ndash; 8 pm</td>
-      </tr>
-      <tr>
-        <td><b>Saturday</b></td><td>7 am &ndash; 3 pm</td>
-      </tr>
-      <tr>
-        <td><b>Sunday</b></td><td>12 pm &ndash; 4 pm</td>
-      </tr>
-    </table>
-  </div>
-  
-  <h3>Eastlake 24 staffed HOURS</h3>
-  <b>Monday &ndash; Thursday</b><br />	
-  12 pm &ndash; 6 pm
+  <%= raw @page.content_for(:body) %>
 
 <div class="category sports">
   <h2>Sports</h2>

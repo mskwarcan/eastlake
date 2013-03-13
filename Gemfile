@@ -26,7 +26,7 @@ end
 gem 'psych'
 gem 'jquery-rails', '~> 2.0.0'
 gem 'pg'
-gem 'fog'
+gem 'fog', '~> 1.4'
 gem 'newrelic_rpm'
 gem 'refinerycms-inquiries', '~> 2.0.0'
 gem 'bundler', '~> 1.2'

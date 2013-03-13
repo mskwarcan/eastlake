@@ -222,7 +222,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.2)
   coffee-rails (~> 3.2.1)
-  fog
+  fog (~> 1.4)
   jquery-rails (~> 2.0.0)
   newrelic_rpm
   pg
