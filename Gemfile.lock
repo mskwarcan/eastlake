@@ -64,7 +64,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     filters_spam (0.3)
-    fog (1.9.0)
+    fog (1.4.0)
       builder
       excon (~> 0.14)
       formatador (~> 0.2.0)
