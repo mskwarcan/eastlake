@@ -1,49 +1,30 @@
 <style>
-  body
-  {
-    background:url(/assets/home_bg.png) #000 top center repeat-x;
-  }
   
   footer
   {
     display:none;
   }
 </style>
-<ul class="promos">
-<% @promos.each do |promo|%>
-  <li><% if promo.url.present? %>
-    <a href="<%= promo.url %>"><img src="<%= promo.promotion.url %>" /></a>
-    <% else %>
-      <img src="<%= promo.promotion.url %>" />
-    <% end %>
-  </li>
-<% end %>
-</ul>
-
-<div class="pager"></div>
-
 <div class="home_info">
-  <%= raw @page.content_for(:body) %>
-
 <div class="category sports">
   <h2>Sports</h2>
   <ul>
-    <li><a href="#"><img src="/assets/tennis.jpg" /><br />
+    <li><a href="/sports/tennis"><img src="/assets/tennis.jpg" /><br />
       Tennis</a>
     </li>
-    <li><a href="#"><img src="/assets/basketball.jpg" /><br />
+    <li><a href="/sports/basketball"><img src="/assets/basketball.jpg" /><br />
       basketball</a>
     </li>
-    <li><a href="#"><img src="/assets/soccer.jpg" /><br />
+    <li><a href="/sports/scooer"><img src="/assets/soccer.jpg" /><br />
       Soccer</a>
     </li>
-    <li><a href="#"><img src="/assets/racquetball.jpg" /><br />
+    <li><a href="/sports/racquetball"><img src="/assets/racquetball.jpg" /><br />
       racquetball</a>
     </li>
-    <li><a href="#"><img src="/assets/football.jpg" /><br />
+    <li><a href="/sports/football"><img src="/assets/football.jpg" /><br />
       football</a>
     </li>
-    <li><a href="#"><img src="/assets/baseball.jpg" /><br />
+    <li><a href="/sports/baseball"><img src="/assets/baseball.jpg" /><br />
       baseball</a>
     </li>
   </ul>
@@ -52,13 +33,13 @@
 <div class="category class">
   <h2>Classes</h2>
   <ul>
-    <li><a href="#"><img src="/assets/fitness.jpg" /><br />
+    <li><a href="/fitness/group-fitness"><img src="/assets/fitness.jpg" /><br />
       fitness</a>
     </li>
-    <li><a href="#"><img src="/assets/speed.jpg" /><br />
+    <li><a href="/fitness/speed-agility"><img src="/assets/speed.jpg" /><br />
       speed &amp; agility</a>
     </li>
-    <li><a href="#"><img src="/assets/bjj.jpg" /><br />
+    <li><a href="/fitness/brazilian-jiu-jitsu"><img src="/assets/bjj.jpg" /><br />
       Brazilian Jiu Jitsu</a>
     </li>
   </ul>
@@ -67,16 +48,20 @@
 <div class="category">
   <h2>Facilities</h2>
   <ul>
-    <li><a href="#"><img src="/assets/fields.jpg" /><br />
+    <li><a href="/facilities/multi-sport-field-rental"><img src="/assets/fields.jpg" /><br />
       Multi-sports Field</a>
     </li>
-    <li><a href="#"><img src="/assets/proshop.jpg" /><br />
+    <li><a href="/facilities/pro-shop"><img src="/assets/proshop.jpg" /><br />
       Pro Shop</a>
     </li>
-    <li><a href="#"><img src="/assets/childcare.jpg" /><br />
+    <li><a href="/facilities/childcare"><img src="/assets/childcare.jpg" /><br />
       Childcare</a>
     </li>
   </ul>
+</div>
+
+<div class="locations">
+  <%= raw @page.content_for(:body) %>
 </div>
 
 </div>
