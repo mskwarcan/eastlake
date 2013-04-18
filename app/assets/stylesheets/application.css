@@ -349,6 +349,40 @@ h2
   width:240px;
 }
 
+/* Staff */
+#staffs ul
+{
+  margin:0;
+  padding:0;
+}
+
+#staffs ul li
+{
+  list-style:none;
+  padding-top:15px;
+  margin-top:15px;
+  clear:left;
+  border-top:1px solid #fffc01;
+}
+
+#staffs ul li:first-child
+{
+  padding-top:0px;
+  margin-top:0px;
+  border-top:none;
+}
+
+#staffs ul li img
+{
+  float:left;
+  margin-right:20px;
+}
+
+#staffs ul li h2, #staffs ul li p
+{
+  margin:0;
+}
+
 /* footer */
 footer
 {
