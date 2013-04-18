@@ -350,13 +350,13 @@ h2
 }
 
 /* Staff */
-#staffs ul
+#staffs
 {
   margin:0;
   padding:0;
 }
 
-#staffs ul li
+#staffs li
 {
   list-style:none;
   padding-top:15px;
@@ -365,20 +365,20 @@ h2
   border-top:1px solid #fffc01;
 }
 
-#staffs ul li:first-child
+#staffs li:first-child
 {
   padding-top:0px;
   margin-top:0px;
   border-top:none;
 }
 
-#staffs ul li img
+#staffs li img
 {
   float:left;
   margin-right:20px;
 }
 
-#staffs ul li h2, #staffs ul li p
+#staffs li h2, #staffs ul li p
 {
   margin:0;
 }
