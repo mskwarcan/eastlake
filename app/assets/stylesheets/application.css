@@ -240,7 +240,7 @@ h2
 .home_info .location
 {
   float:left;
-  margin-right:20px;
+  margin:0 20px 10px 0;
   color:#ababab;
 }
 
